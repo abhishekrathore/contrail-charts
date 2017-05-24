@@ -16,7 +16,7 @@ describe('localhost:9000', function () {
       var logCheck = new LogCheck()
       var index = logCheck.checkLogs('http://localhost:9000/#groupedNavigation', 'groupedNavigation')
       expect(index).toBe(-1)
-      browser.call(done);
+      //browser.call(done);
     })
   })
 });  

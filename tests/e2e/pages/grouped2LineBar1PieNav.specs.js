@@ -17,7 +17,7 @@ describe('localhost:9000', function () {
       var index = logCheck.checkLogs('http://localhost:9000/#lineBarStackedBar', 'lineBarStackedBar')
       console.log(index);
       expect(index).toBe(-1);
-      browser.call(done);
+      //browser.call(done);
     })
   })
 });

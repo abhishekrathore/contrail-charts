@@ -26,7 +26,7 @@ describe('Testing jasmine on circle CI', function () {
       console.log(logs);
       console.log("================================");
       expect(index).toBe(-1);
-      browser.call(done);
+      //browser.call(done);
     })
   })
 });
