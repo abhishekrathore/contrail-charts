@@ -58,7 +58,7 @@ exports.config = {
         //
         browserName: 'chrome',    // options: `firefox`, `chrome`, `opera`, `safari`
         version: '58.0',          // browser version
-        platform: 'XP',           // OS platform
+        platform: 'Windows 8',           // OS platform
         tags: ['tag1', 'tag2'],    // specify some tags (e.g. if you use Sauce Labs)
         name: 'my test',          // set name for test (e.g. if you use Sauce Labs)
     }],
