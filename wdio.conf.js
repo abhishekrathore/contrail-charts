@@ -1,5 +1,5 @@
 exports.config = {
-    
+
     //
     // =================
     // Service Providers
@@ -10,8 +10,8 @@ exports.config = {
     //
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    
-    
+
+
     //
     // ==================
     // Specify Test Files
@@ -54,9 +54,13 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 10,
         //
-        browserName: 'chrome'
+        browserName: 'chrome',    // options: `firefox`, `chrome`, `opera`, `safari`
+        version: '58.0',          // browser version
+        platform: 'XP',           // OS platform
+        tags: ['tag1', 'tag2'],    // specify some tags (e.g. if you use Sauce Labs)
+        name: 'my test',          // set name for test (e.g. if you use Sauce Labs)
     }],
     //
     // ===================
@@ -145,11 +149,11 @@ exports.config = {
         // The Jasmine framework allows interception of each assertion in order to log the state of the application
         // or website depending on the result. For example, it is pretty handy to take a screenshot every time
         // an assertion fails.
-        expectationResultHandler: function(passed, assertion) {
+        expectationResultHandler: function (passed, assertion) {
             // do something
         }
     },
-    
+
     //
     // =====
     // Hooks
