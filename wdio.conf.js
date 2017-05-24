@@ -60,7 +60,7 @@ exports.config = {
         version: '58.0',          // browser version
         platform: 'Windows 10',           // OS platform
         tags: ['tag1', 'tag2'],    // specify some tags (e.g. if you use Sauce Labs)
-        name: 'my test',          // set name for test (e.g. if you use Sauce Labs)
+        name: 'Juniper Test',          // set name for test (e.g. if you use Sauce Labs)
     }],
     //
     // ===================

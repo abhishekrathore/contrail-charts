@@ -2,9 +2,9 @@
 describe('Testing jasmine on circle CI', function () {
   beforeAll(function (done) {
     //  elusive browser object, I will find where you're defined!
-    // browser
-    //   .url('http://localhost:9000')  //  in the wdio.config.js I have the base url set to my website.
-    //   .call(done);
+    browser
+      .url('http://localhost:9000')  //  in the wdio.config.js I have the base url set to my website.
+      .call(done);
   });
   afterAll(function (done) {
     browser.end(done);
